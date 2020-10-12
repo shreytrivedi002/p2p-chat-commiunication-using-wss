@@ -74,7 +74,7 @@ class Home extends Component {
     return (
       <div className="bg-dark">
         <div className="header ">
-          <div className="row justify-content-right btn-park">
+          <div className="row justify-content-center btn-park">
             <span>Welcome {this.state.myName} !</span>
             <Button
               className="btn-success col-3 pt-0 ml-2 "
@@ -185,7 +185,7 @@ class Home extends Component {
                   className="btn-success p-0"
                   onClick={() => this.createNameRoom()}
                 >
-                  Connect
+                  Start
                 </Button>
               </p>
             </Modal.Body>
