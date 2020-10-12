@@ -4,7 +4,9 @@
 
 .btn-park span {
   border: 2px solid white;
-  padding: 2px;
+  /* padding: 2px; */
+  /* padding-right: 0px; */
+  /* margin-left: 10%; */
   color: rgb(99, 99, 131);
 }
 .outer-chat {

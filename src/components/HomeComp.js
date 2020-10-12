@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import io from "socket.io-client";
 import { Button, Modal } from "react-bootstrap";
 
-const serverurl = "http://localhost:3000";
+const serverurl = "https://comm-server-api.herokuapp.com/";
 
 class Home extends Component {
   constructor(props) {
@@ -72,12 +72,12 @@ class Home extends Component {
 
   render() {
     return (
-      <div>
+      <div className="bg-dark">
         <div className="header ">
-          <div className="row justify-content-end btn-park">
+          <div className="row justify-content-right btn-park">
             <span>Welcome {this.state.myName} !</span>
             <Button
-              className="btn-success pt-0 pr-4"
+              className="btn-success col-3 pt-0 ml-2 "
               onClick={() =>
                 this.setState({
                   showIdModal: !this.state.showIdModal,
@@ -99,7 +99,7 @@ class Home extends Component {
 
         <div className="container outer-chat">
           <h1>Lets Chat a Little</h1>
-          <div className="chat-box col-lg-12">
+          <div className="chat-box col-lg-12 col-sm-12">
             <div className="chat-content">{this.renderChat()}</div>
           </div>
           <form onSubmit={(e) => this.send(e)}>
