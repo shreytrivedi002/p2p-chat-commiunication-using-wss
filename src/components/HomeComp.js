@@ -75,9 +75,9 @@ class Home extends Component {
       <div className="bg-dark">
         <div className="header ">
           <div className="row justify-content-center btn-park">
-            <span>Welcome {this.state.myName} !</span>
+            <span className="col-6 mb-1">Welcome {this.state.myName} !</span>
             <Button
-              className="btn-success col-3 pt-0 ml-2 "
+              className="btn-success col-6 pt-0 ml-2 btns"
               onClick={() =>
                 this.setState({
                   showIdModal: !this.state.showIdModal,

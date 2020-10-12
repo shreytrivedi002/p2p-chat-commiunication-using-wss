@@ -2,11 +2,16 @@
   background-color: rgb(54, 56, 56);
 }
 
+.btns {
+  word-wrap: break-word;
+}
+
 .btn-park span {
   border: 2px solid white;
   /* padding: 2px; */
   /* padding-right: 0px; */
-  margin-left: 10%;
+  word-wrap: break-word;
+  /* margin-left: 10%; */
   color: rgb(99, 99, 131);
 }
 .outer-chat {
@@ -30,6 +35,7 @@
 .btsn {
   border-left: transparent;
   background-color: white;
+  word-wrap: break-word;
 }
 .chat-content {
   padding-left: 0px;
